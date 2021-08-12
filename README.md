@@ -23,8 +23,9 @@ Or install it yourself as:
 
 ```ruby
 class Search
-  attr_accessor :word, :page, :sort
+  attr_accessor :word, :page, :sort, :foo, :bar
   chainable_accessor :word, :page, :sort
+  chainable_accessor :foo, :bar, immutable: true
 end
 
 Search.new.word('foo').page(1).sort(:released_at)
