@@ -23,6 +23,8 @@ Or install it yourself as:
 
 ```ruby
 class Search
+  extend ChainableAccessor
+
   attr_accessor :word, :page, :sort, :foo, :bar
   chainable_accessor :word, :page, :sort
   chainable_accessor :foo, :bar, immutable: true
