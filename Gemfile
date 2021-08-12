@@ -5,5 +5,8 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'rake'
-gem 'rspec'
-gem 'rubocop'
+group :development do
+  gem 'pry'
+  gem 'rspec'
+  gem 'rubocop'
+end
