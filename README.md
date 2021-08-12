@@ -1,13 +1,13 @@
-# ChainableAssign
+# ChainableAccessor
 
-this gem generate chainable method to assign variable.
+this gem generate chainable method to accessor variable.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'chainable_assign'
+gem 'chainable_accessor'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install chainable_assign
+    $ gem install chainable_accessor
 
 ## Usage
 
@@ -24,7 +24,7 @@ Or install it yourself as:
 ```ruby
 class Search
   attr_accessor :word, :page, :sort
-  chainable :word, :page, :sort
+  chainable_accessor :word, :page, :sort
 end
 
 Search.new.word('foo').page(1).sort(:released_at)
@@ -38,7 +38,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/masarakki/chainable_assign.
+Bug reports and pull requests are welcome on GitHub at https://github.com/masarakki/chainable_accessor.
 
 ## License
 

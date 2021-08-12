@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'chainable_assign'
+require 'chainable_accessor'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

@@ -1,24 +1,24 @@
 # frozen_string_literal: true
 
-require_relative 'lib/chainable_assign/version'
+require_relative 'lib/chainable_accessor/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'chainable_assign'
-  spec.version       = ChainableAssign::VERSION
+  spec.name          = 'chainable_accessor'
+  spec.version       = ChainableAccessor::VERSION
   spec.authors       = ['masarakki']
   spec.email         = ['masaki182@gmail.com']
 
-  spec.summary       = 'generate method-chain style variable assigner.'
-  spec.description   = 'generate method-chain style variable assigner.'
-  spec.homepage      = 'https://github.com/masarakki/chainable_assign'
+  spec.summary       = 'generate method-chain style variable accessor.'
+  spec.description   = 'generate method-chain style variable accessor.'
+  spec.homepage      = 'https://github.com/masarakki/chainable_accessor'
   spec.license       = 'MIT'
   spec.required_ruby_version = '>= 2.5.0'
 
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/masarakki/chainable_assign'
-  spec.metadata['changelog_uri'] = 'https://github.com/masarakki/chainable_assign/blob/master/CHANGELOG.md'
+  spec.metadata['source_code_uri'] = 'https://github.com/masarakki/chainable_accessor'
+  spec.metadata['changelog_uri'] = 'https://github.com/masarakki/chainable_accessor/blob/master/CHANGELOG.md'
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{\A(?:test|spec|features)/}) }
