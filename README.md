@@ -1,8 +1,6 @@
 # ChainableAssign
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/chainable_assign`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+this gem generate chainable method to assign variable.
 
 ## Installation
 
@@ -22,7 +20,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+
+```ruby
+class Search
+  attr_accessor :word, :page, :sort
+  chainable :word, :page, :sort
+end
+
+Search.new.word('foo').page(1).sort(:released_at)
+```
 
 ## Development
 
